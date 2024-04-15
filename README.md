@@ -5,7 +5,7 @@ Optimisation Web - [Projet Scrollytelling](https://tim-montmorency.com/timdoc/58
 - William Beauvais
 - Justin Guay
 ## Développement/programmation
-- William Beauvais<
+- William Beauvais
 ## Technologies
 - HTML
 - CSS
