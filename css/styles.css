@@ -1,0 +1,175 @@
+@font-face {
+    src: url("/polices/SuperSunday-vn3MA.ttf") format("ttf");
+    font-family: "Super Sunday";
+  }
+
+:root { --vert: #36453b; 
+        --bleu: #596869; 
+        --gris: #515751; 
+        --blanc: #f5f9e9; 
+        --beige: #c2c1a5; 
+}
+
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+
+* { box-sizing: border-box; }
+
+body {
+    overflow-x: hidden;
+}
+
+.test {
+    width: 1000vw;
+    height: 1000vh;
+    background-color: #000;
+}
+
+.test.is-scrolling{
+    animation-play-state: running;
+}
+
+.sprite {
+    width: 349.6px;
+    height: 378px;
+    background-image: url("/img/img_personnages/oiseau_sprite.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    animation-name: vol;
+    animation-play-state: paused;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(6);
+  /* Note: La feuille de sprite contient 19 images-clés, donc 19 steps */
+}
+@keyframes vol {
+  from { background-position: 0 0; }
+  to { background-position: -2098px 0; }
+}
+
+/*--------------------------------------------------------- 
+# Header
+---------------------------------------------------------*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/img_arriere_plan/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vw;
+    padding: 10vh;
+    margin: 0;
+    color: var(--blanc);
+    font-family: Super Sunday;
+}
+
+p {
+    font-family: Super Sunday;
+    color: var(--blanc);
+    text-align: center;
+
+}
+
+.mouse {
+    width: 20vw;
+    position: relative;
+    left: 40vw;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 1 
+---------------------------------------------------------*/
+
+.debutchap1 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/01_fond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 2
+---------------------------------------------------------*/
+
+.debutchap2 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/02_fond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 3 
+---------------------------------------------------------*/
+
+.debutchap3 {
+    width: 100vw;
+    height: 410vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/03_fond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 4
+---------------------------------------------------------*/
+
+.debutchap4 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/04_scene.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 5
+---------------------------------------------------------*/
+
+.debutchap5 {
+    width: 100vw;
+    height: 110vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/05_fond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
+
+/*--------------------------------------------------------- 
+# Chapitre 6
+---------------------------------------------------------*/
+
+.debutchap6 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("/img/img_arriere_plan/06_fond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100vh;
+}
