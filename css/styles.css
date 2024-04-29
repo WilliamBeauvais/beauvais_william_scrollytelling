@@ -49,6 +49,34 @@ body {
   to { background-position: -2098px 0; }
 }
 
+.texte {
+    position: absolute;
+    left: 40vw;
+    top: 5vh;
+    font-size: 1vw;
+}
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
 /*--------------------------------------------------------- 
 # Header
 ---------------------------------------------------------*/
@@ -90,13 +118,41 @@ p {
 
 .debutchap1 {
     width: 100vw;
-    height: 100vh;
+    height: 113vh;
     margin: 0;
     background-image: url("/img/img_arriere_plan/01_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     top: 100vh;
+}
+
+.arbre_bas_1 {
+    position: absolute;
+    top: 65vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+.arbre_haut_1 {
+    position: absolute;
+    top: 35vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.lac_1 {
+    position: absolute;
+    top: 66vh;
+    left: 10vw;
+    width: 90vw;
+}
+
+.nuage_1 {
+    position: absolute;
+    width:70vw;
+    left: 15vw;
+    top: 5vh;
 }
 
 /*--------------------------------------------------------- 
@@ -114,6 +170,13 @@ p {
     top: 100vh;
 }
 
+.oiseau_2 {
+    position: absolute;
+    width:3vw;
+    left: 60vw;
+    top: 30vh;
+}
+
 /*--------------------------------------------------------- 
 # Chapitre 3 
 ---------------------------------------------------------*/
@@ -127,6 +190,26 @@ p {
     background-repeat: no-repeat;
     position: relative;
     top: 100vh;
+}
+
+.arbre_bas_3 {
+    position: absolute;
+    width: 100vw;
+    left: 19vw;
+    top: 82vh;
+}
+
+.nuage_3 {
+    position: absolute;
+    width: 10vw;
+    top: 10vh;
+}
+
+.oiseau_3 {
+    position: absolute;
+    width: 40vw;
+    top:20vh;
+    left: 30vw;
 }
 
 /*--------------------------------------------------------- 
@@ -159,6 +242,20 @@ p {
     top: 100vh;
 }
 
+.cerf_5 {
+    position: absolute;
+    width: 10vw;
+    top: 65vh;
+    left: -10vw;
+}
+
+.lapin_5 {
+    position: absolute;
+    width: 10vw;
+    top: 65vh;
+    left: 110vw;
+}
+
 /*--------------------------------------------------------- 
 # Chapitre 6
 ---------------------------------------------------------*/
@@ -172,4 +269,16 @@ p {
     background-repeat: no-repeat;
     position: relative;
     top: 100vh;
+}
+
+.arbre_lac_6 {
+    position: absolute;
+    top: 15vh;
+}
+
+.animaux_6 {
+    position: absolute;
+    width: 20vw;
+    top: 30vh;
+    left: 30vw;
 }
