@@ -1,6 +1,6 @@
 @font-face {
-    src: url("/polices/SuperSunday-vn3MA.ttf") format("ttf");
-    font-family: "Super Sunday";
+    src: url("../polices/SuperSunday-vn3MA.ttf") format("ttf");
+    font-family: SuperSunday;
   }
 
 :root { --vert: #36453b; 
@@ -13,7 +13,7 @@
 /*--------------------------------------------------------- 
 # Styles Généraux 
 ---------------------------------------------------------*/
-
+ 
 * { box-sizing: border-box; }
 
 body {
@@ -33,7 +33,7 @@ body {
 .sprite {
     width: 349.6px;
     height: 378px;
-    background-image: url("/img/img_personnages/oiseau_sprite.png");
+    background-image: url("../img/img_personnages/oiseau_sprite.png");
     background-size: cover;
     background-repeat: no-repeat;
     aspect-ratio: 1/1;
@@ -51,9 +51,11 @@ body {
 
 .texte {
     position: absolute;
+    width: 50vw;
     left: 40vw;
     top: 5vh;
-    font-size: 1vw;
+    font-size: 2vw;
+    font-family: SuperSunday;
 }
 
 ul.technique-gsap{
@@ -84,7 +86,7 @@ ul.technique-gsap li{
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url("/img/img_arriere_plan/header.png");
+    background-image: url("../img/img_arriere_plan/header.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -94,7 +96,7 @@ h1 {
     text-align: center;
     font-size: 10vw;
     padding: 10vh;
-    margin: 0;
+    margin-bottom: 10vh;
     color: var(--blanc);
     font-family: Super Sunday;
 }
@@ -107,9 +109,9 @@ p {
 }
 
 .mouse {
-    width: 20vw;
+    width: 10vw;
     position: relative;
-    left: 40vw;
+    left: 45vw;
 }
 
 /*--------------------------------------------------------- 
@@ -120,7 +122,7 @@ p {
     width: 100vw;
     height: 113vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/01_fond.svg");
+    background-image: url("../img/img_arriere_plan/01_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -151,8 +153,8 @@ p {
 .nuage_1 {
     position: absolute;
     width:70vw;
-    left: 15vw;
-    top: 5vh;
+    left: -15vw;
+    top: 15vh;
 }
 
 /*--------------------------------------------------------- 
@@ -163,7 +165,7 @@ p {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/02_fond.svg");
+    background-image: url("../img/img_arriere_plan/02_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -173,7 +175,7 @@ p {
 .oiseau_2 {
     position: absolute;
     width:3vw;
-    left: 60vw;
+    left: 100vw;
     top: 30vh;
 }
 
@@ -185,7 +187,7 @@ p {
     width: 100vw;
     height: 410vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/03_fond.svg");
+    background-image: url("../img/img_arriere_plan/03_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -220,7 +222,7 @@ p {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/04_scene.svg");
+    background-image: url("../img/img_arriere_plan/04_scene.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -235,7 +237,7 @@ p {
     width: 100vw;
     height: 110vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/05_fond.svg");
+    background-image: url("../img/img_arriere_plan/05_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -245,7 +247,7 @@ p {
 .cerf_5 {
     position: absolute;
     width: 10vw;
-    top: 65vh;
+    top: 55vh;
     left: -10vw;
 }
 
@@ -264,7 +266,7 @@ p {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url("/img/img_arriere_plan/06_fond.svg");
+    background-image: url("../img/img_arriere_plan/06_fond.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -273,12 +275,14 @@ p {
 
 .arbre_lac_6 {
     position: absolute;
-    top: 15vh;
+    top: -15vh;
+    display: inline;
+    width: 200vw;
 }
 
 .animaux_6 {
     position: absolute;
-    width: 20vw;
-    top: 30vh;
+    width: 30vw;
+    top: 20vh;
     left: 30vw;
 }
