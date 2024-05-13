@@ -1,20 +1,23 @@
 @font-face {
     src: url("../polices/SuperSunday-vn3MA.ttf") format("ttf");
-    font-family: SuperSunday;
-  }
+    font-family: Super Sunday;
+}
 
-:root { --vert: #36453b; 
-        --bleu: #596869; 
-        --gris: #515751; 
-        --blanc: #f5f9e9; 
-        --beige: #c2c1a5; 
+:root {
+    --vert: #36453b;
+    --bleu: #596869;
+    --gris: #515751;
+    --blanc: #f5f9e9;
+    --beige: #c2c1a5;
 }
 
 /*--------------------------------------------------------- 
 # Styles Généraux 
 ---------------------------------------------------------*/
- 
-* { box-sizing: border-box; }
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     overflow-x: hidden;
@@ -26,7 +29,7 @@ body {
     background-color: #000;
 }
 
-.test.is-scrolling{
+.test.is-scrolling {
     animation-play-state: running;
 }
 
@@ -39,14 +42,20 @@ body {
     aspect-ratio: 1/1;
     animation-name: vol;
     animation-play-state: paused;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(6);
-  /* Note: La feuille de sprite contient 19 images-clés, donc 19 steps */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
+    /* Note: La feuille de sprite contient 19 images-clés, donc 19 steps */
 }
+
 @keyframes vol {
-  from { background-position: 0 0; }
-  to { background-position: -2098px 0; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2098px 0;
+    }
 }
 
 .texte {
@@ -55,11 +64,11 @@ body {
     left: 40vw;
     top: 5vh;
     font-size: 2vw;
-    font-family: SuperSunday;
+    font-family: Super Sunday;
 }
 
-ul.technique-gsap{
-    background: rgba(0,0,0,0.3);
+ul.technique-gsap {
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 10px;
     font-family: monospace;
@@ -75,7 +84,7 @@ ul.technique-gsap{
     left: 0;
 }
 
-ul.technique-gsap li{
+ul.technique-gsap li {
     margin: 5px 0;
 }
 
@@ -152,7 +161,7 @@ p {
 
 .nuage_1 {
     position: absolute;
-    width:70vw;
+    width: 70vw;
     left: -15vw;
     top: 15vh;
 }
@@ -174,7 +183,7 @@ p {
 
 .oiseau_2 {
     position: absolute;
-    width:3vw;
+    width: 3vw;
     left: 100vw;
     top: 30vh;
 }
@@ -199,18 +208,20 @@ p {
     width: 100vw;
     left: 19vw;
     top: 82vh;
+    z-index: 500;
 }
 
 .nuage_3 {
     position: absolute;
     width: 10vw;
     top: 10vh;
+    left: 0vh;
 }
 
 .oiseau_3 {
     position: absolute;
-    width: 40vw;
-    top:20vh;
+    width: 20vw;
+    top: 20vh;
     left: 30vw;
 }
 
@@ -253,9 +264,9 @@ p {
 
 .lapin_5 {
     position: absolute;
-    width: 10vw;
-    top: 65vh;
-    left: 110vw;
+    width: 6vw;
+    top: 95vh;
+    left: 100vw;
 }
 
 /*--------------------------------------------------------- 
@@ -285,4 +296,8 @@ p {
     width: 30vw;
     top: 20vh;
     left: 30vw;
+}
+
+.chap6texte {
+    z-index: 1000;
 }

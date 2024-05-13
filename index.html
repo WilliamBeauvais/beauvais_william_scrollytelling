@@ -4,166 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <title>Paix Naturelle
     </title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js">
     </script>
-</head> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+</head>
 
 <body>
     <header>
-    <h1>
-          Paix Naturelle
-    </h1>
-    <img class="mouse" src="/img/mouse.svg" alt="souris">
-    <p>
-        ⬇️ Défilez la page ⬇️
-    </p>
-    <p>
-        Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
-        © 2024 - Conception : William Beauvais et Justin Guay | Développement Web : William Beauvais.
-        Utilisation de la bibliothèque d'images libres de droits : The Noun Project.
-    </p>
+        <h1>
+            Paix Naturelle
+        </h1>
+        <img class="mouse" src="img/mouse.svg" alt="souris">
+        <p>
+            ⬇️ Défilez la page ⬇️
+        </p>
+        <p>
+            Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège
+            Montmorency.
+            © 2024 - Conception : William Beauvais et Justin Guay | Développement Web : William Beauvais.
+            Utilisation de la bibliothèque d'images libres de droits : The Noun Project.
+        </p>
     </header>
 
     <main>
         <div class="debutchap1">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>déplacement de position x
-                    <ul> 
-                        <li>.to(".nuage_1",{x:"-20vw",duration:5});
-                            </li> 
-                    </ul> 
-                </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.debutchap1'</li> 
-                    </ul> 
-                </li> 
+                    <ul>
+                        <li>gsap.to(".nuage_1",{x:"50vw"});
+                        </li>
+                    </ul>
+                </li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>scrollTrigger: {
+                            pin: true,
+                            scrub: true,
+                            start: 'top',
+                            end: 'bottom',
+                            trigger: '.debutchap1',
+                            }</li>
+                    </ul>
+                </li>
             </ul>
-            <p class = texte>Tout est paisible dans la forêt</p>
-            <img class="arbre_bas_1" src="/img/img_elements_visuels/01_arbre_bas.svg" alt="arbre_bas">
-            <img class="arbre_haut_1" src="/img/img_elements_visuels/01_arbre_haut.svg" alt="arbre_haut">
-            <img class="lac_1" src="/img/img_elements_visuels/01_lac.svg" alt="lac">
-            <img class="nuage_1" src="/img/img_elements_visuels/01_nuage.svg" alt="nuage">
+            <p class="texte">Tout est paisible dans la forêt</p>
+            <img class="arbre_bas_1" src="img/img_elements_visuels/01_arbre_bas.svg" alt="arbre_bas" loading="lazy">
+            <img class="arbre_haut_1" src="img/img_elements_visuels/01_arbre_haut.svg" alt="arbre_haut" loading="lazy">
+            <img class="lac_1" src="img/img_elements_visuels/01_lac.svg" alt="lac" loading="lazy">
+            <img class="nuage_1" src="img/img_elements_visuels/01_nuage.svg" alt="nuage" loading="lazy">
         </div>
         <div class="finchap1">
 
         </div>
         <div class="debutchap2">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>déplacement de position x
-                    <ul> 
-                        <li>.to(".oiseau_2",{x:"-20vw",duration:2});
-                           
-                            </li> 
-                    </ul> 
-                </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.debutchap2'</li> 
-                    </ul> 
-                </li> 
+                    <ul>
+                        <li>gsap.to(".oiseau_2",{x:"-60vw"});
+
+                        </li>
+                    </ul>
+                </li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>scrollTrigger: {
+                            pin: true,
+                            scrub: true,
+                            start: 'top',
+                            end: 'bottom',
+                            trigger: '.debutchap2',
+                            }</li>
+                    </ul>
+                </li>
             </ul>
-            <p class = texte>Les oiseau volent</p>
-            <img class="oiseau_2" src="/img//img_personnages/02_oiseau.svg" alt="oiseau">
+            <p class="texte">Les oiseau volent</p>
+            <img class="oiseau_2" src="img//img_personnages/02_oiseau.svg" alt="oiseau" loading="lazy">
         </div>
         <div class="finchap2">
 
         </div>
         <div class="debutchap3">
-            <ul class="technique-gsap"> 
-                <li>rotation
-                    <ul> 
-                        <li>.to(".oiseau_3",{rotate:"720",duration:5});
-                           
-                            </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.oiseau_3'</li> 
-                    </ul> 
-                </li> 
-            </ul>
-            <p class = texte>Le plus jeune tombe </p>
-            <img class="arbre_bas_3" src="/img/img_elements_visuels/03_arbre_bas.svg" alt="arbre_bas">
-            <img class="nuage_3" src="/img/img_elements_visuels/03_nuage.svg" alt="nuage">
-            <img class="oiseau_3" src="/img/img_personnages/03_oiseau.svg" alt="oiseau">
+            <ul class="technique-gsap">
+                <li>rotation et paralax
+                    <ul>
+                        <li>gsap.to(".oiseau_3",{rotate:"1000",y: 10 * speed});
+
+                        </li>
+                        <li>gsap.to(".nuage_3",{y: 7 * speed});
+
+                        </li>
+                        <li>gsap.to(".debutchap3",{y: -10 * speed});
+
+                        </li>
+                        <li>scrollTrigger
+                            <ul>
+                                <li>scrollTrigger: {
+                                    pin: true,
+                                    scrub: true,
+                                    start: 'top',
+                                    end: 'bottom',
+                                    trigger: '.debutchap3',
+                                    }</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="texte">Le plus jeune tombe </p>
+                    <img class="arbre_bas_3" src="img/img_elements_visuels/03_arbre_bas.svg" alt="arbre_bas"
+                        loading="lazy">
+                    <img class="nuage_3" src="img/img_elements_visuels/03_nuage.svg" alt="nuage" loading="lazy">
+                    <img class="oiseau_3" src="img/img_personnages/03_oiseau.svg" alt="oiseau" loading="lazy">
         </div>
         <div class="finchap3">
 
         </div>
         <div class="debutchap4">
-            <ul class="technique-gsap"> 
-                <li>changement d'échelle (zoom)
-                    <ul> 
-                        <li>.to(".debutchap4",{scale:"140%",duration:5});
-                           
-                            </li>
-                    </ul> 
-                </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.debutchap4'</li> 
-                    </ul> 
-                </li> 
+            <ul class="technique-gsap">
+                <li>animation de texte
+                    <ul>
+                        <li>.to(".txt4",{duration: 2, text: "Le loup vient aider l'oiseau", ease: "none"});
+
+                        </li>
+                    </ul>
+                </li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>scrollTrigger: {
+                            pin: true,
+                            scrub: true,
+                            start: 'top',
+                            end: 'bottom -200%',
+                            trigger: '.debutchap4',
+                            }</li>
+                    </ul>
+                </li>
             </ul>
-            <p class = texte>Le loup vient aider l'oiseau</p>
+            <p class=" texte txt4"></p>
 
         </div>
         <div class="finchap4">
 
         </div>
         <div class="debutchap5">
-            <ul class="technique-gsap"> 
-                <li>déplacement de position x
-                    <ul> 
-                        <li>.to(".cerf_5",{x:"30vw",duration:2})
-                           
-                            </li> 
-                        <li>.to(".lapin_5",{x:"-30vw",duration:2});</li> 
-                    </ul> 
-                </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.debutchap5'</li> 
-                    </ul> 
-                </li> 
+            <ul class="technique-gsap">
+                <li>timeline (déplacement de position x)
+                    <ul>
+                        <li>ami.to(".cerf_5", { x: "35vw", y: "5vw", });
+
+                        </li>
+                        <li>ami.to(".lapin_5", { x: "-40vw", y: "-5vw", });</li>
+                    </ul>
+                </li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>scrollTrigger: {
+                            pin: true,
+                            scrub: true,
+                            start: 'top',
+                            end: 'bottom',
+                            trigger: '.debutchap5',
+                            }</li>
+                    </ul>
+                </li>
             </ul>
-            <p class = texte>Il appelle ses amis</p>
-            <img class="cerf_5" src="/img/img_personnages/05_cerf.svg" alt="cerf">
-            <img class="lapin_5" src="/img/img_personnages/05_lapin.svg" alt="lapin">
+            <p class="texte">Il appelle ses amis</p>
+            <img class="cerf_5" src="img/img_personnages/05_cerf.svg" alt="cerf" loading="lazy">
+            <img class="lapin_5" src="img/img_personnages/05_lapin.svg" alt="lapin" loading="lazy">
         </div>
         <div class="finchap5">
 
         </div>
         <div class="debutchap6">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>déplacement de position x
-                    <ul> 
-                        <li>.to(".arbre_lac_6",{x:"-100%",duration:5})
-                            </li> 
-                        <li>.to(".debutchap6",{x:"-100%",duration:20});</li> 
-                    </ul> 
-                </li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>'.debutchap6'</li> 
-                    </ul> 
-                </li> 
+                    <ul>
+                        <li>gsap.to(".arbre_lac_6",{x:"-50%"});</li>
+
+                    </ul>
+                </li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>scrollTrigger: {
+                            pin: true,
+                            scrub: true,
+                            start: 'top',
+                            end: 'bottom',
+                            trigger: '.debutchap6',
+                            }</li>
+                    </ul>
+                </li>
             </ul>
-            <p class = "texte">Les amis marchent dans la forêt</p>
-            <img class = "arbre_lac_6" src="/img/img_elements_visuels/06_arbres_lac.svg" alt="arbres_lac">
-            <img class="animaux_6" src="/img/img_personnages/06_animaux.svg" alt="animaux">
+            <p class="texte chap6texte">Les amis marchent dans la forêt</p>
+            <img class="arbre_lac_6" src="img/img_elements_visuels/06_arbres_lac.svg" alt="arbres_lac" loading="lazy">
+            <img class="animaux_6" src="img/img_personnages/06_animaux.svg" alt="animaux" loading="lazy">
         </div>
         <div class="finchap6">
 
@@ -176,9 +216,9 @@
         </p>
     </footer>
 
-    <script src="/script/script.js">
+    <script src="script/script.min.js">
     </script>
-    
+
 </body>
 
 </html>
